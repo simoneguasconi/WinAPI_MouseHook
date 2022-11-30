@@ -43,9 +43,9 @@ namespace mouse_hook
           }
 
           if (button != MouseButtonsEnum::NoneButton) {
-            printf_s("[button='%s', state='%s']\n",
-                     button_name[get_button_type(button)],
-                     button_state[down]);
+            printf_s("[button='%s', state='%s']\n"
+                     , button_name[get_button_type(button)]
+                     , button_state[down]);
           }
         }
       }
